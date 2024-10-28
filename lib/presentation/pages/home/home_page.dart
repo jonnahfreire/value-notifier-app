@@ -30,9 +30,7 @@ class _HomePageState extends State<HomePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Text("Informe seu nome: "),
-                  TextFormField(
-                    controller: _homePageStore.nameControllerNotifier.value,
-                  ),
+                  TextFormField(controller: _homePageStore.nameController),
                 ],
               ),
             ),

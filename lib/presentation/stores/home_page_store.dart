@@ -16,6 +16,7 @@ class HomePageStore {
   int get counter => counterNotifier.value;
   bool get hasName => nameControllerNotifier.value.text.isNotEmpty;
   String get name => nameControllerNotifier.value.text;
+  TextEditingController get nameController => nameControllerNotifier.value;
 
   void increment() {
     counterNotifier.value++;
